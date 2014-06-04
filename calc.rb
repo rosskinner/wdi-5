@@ -1,9 +1,3 @@
-def read_choice
-	start
-	# basic_calc
-	gets.chomp.downcase
-end
-
 def user_input
 		n1 = input_return("What is your first number?")
 		n2 = input_return("What is your second number?")	
@@ -15,7 +9,7 @@ def input_return(message)
 	while number == nil
 		print message
 		begin
-			number = Integer(gets.chomp)
+			number = Float(gets.chomp)
 		rescue
 			puts "You screwed up! Put a number"
 		end
@@ -24,6 +18,34 @@ def input_return(message)
 end
 
 def start
+	print "What would you like to do: (c)alculate, (m)ortagage, (b)mi, (t)rip?"
+	response = gets.chomp
+	case response
+		when 'c'
+			calc
+		when 'm'
+			mortgage
+		when 'b'
+			bmi
+		when 't'
+			trip
+		when 'q'
+			Kernel.exit
+		else
+			puts "Not valid"
+		end
+	end
+
+def mortage
+	p = input_return("What is the Principal of the loan?")
+	i = input_return("What is the interest rate?")
+	n = input_return("What are the number of payments?")
+	m = p((i(1+1) ** n)/(((1 +i) ** n) -1))
+
+	puts "Your monthly payments on your mortgage are #{m}."
+end
+
+def calc
 	print "Would you like to do a (b)asic or (a)dvanced calculation?"
 	response = gets.chomp
 	case response
@@ -67,7 +89,7 @@ def basic_calc
 	# 	response = read_choice
 
 	end
-	start
+	calc
 end
 
 def advanced_calc
@@ -88,7 +110,7 @@ def advanced_calc
 			puts "Not valid"
 		end
 	end
-	start
+	calc
 end
 
 
