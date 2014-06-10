@@ -143,11 +143,15 @@ Error message and password prompt
 
 <li>Ruby - Intro</li>
 
+<li>Sinatra</li>
+
 <li>W1D1</li>
 
 <li>W1D2</li>
 
 <li>W1D3</li>
+
+<li>W2D2</li>
 
 </ul>
 </p>
@@ -3684,7 +3688,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div current-tiddler="git" modified="20140609123414308" title="$:/HistoryList" type="application/json">
+<div current-tiddler="W2D2" modified="20140610063218964" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;Draft of 'New Tiddler'&quot;
@@ -3805,6 +3809,24 @@ Error message and password prompt
     },
     {
         &quot;title&quot;: &quot;git&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'New Tiddler'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Sinatra&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'New Tiddler'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'Sinatra'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Sinatra&quot;
+    },
+    {
+        &quot;title&quot;: &quot;W2D2&quot;
     }
 ]</pre>
 </div>
@@ -3826,7 +3848,7 @@ Error message and password prompt
 <div modified="20140606044308833" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div list="git [[Array - familiarity.rb]] [[Ruby - Intro]] [[Hashes and Symbols]] W1D3 W1D2 W1D1" title="$:/StoryList">
+<div list="W2D2 Sinatra git [[Hashes and Symbols]] [[New Tiddler 1]] [[Array - familiarity.rb]] [[Ruby - Intro]] W1D3 W1D2 W1D1" title="$:/StoryList">
 <pre></pre>
 </div>
 <div dependents="$:/themes/tiddlywiki/vanilla" description="A clean theme that emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.0.12-beta">
@@ -4190,6 +4212,84 @@ class Square
   end
 end`</pre>
 </div>
+<div created="20140610061720168" modified="20140610061918143" title="Sinatra">
+<pre>Rosalinds-MacBook-Pro:wdi-5 Ros$ pry
+[1] pry(main)&gt; require httparty
+NameError: undefined local variable or method `httparty' for main:Object
+from (pry):1:in `__pry__'
+[2] pry(main)&gt; require 'httparty'
+=&gt; true
+[3] pry(main)&gt; @title = &quot;jaws&quot;
+=&gt; &quot;jaws&quot;
+[4] pry(main)&gt; url = &quot;http://www.omdbapi.com/?t=#{@title}&quot;
+=&gt; &quot;http://www.omdbapi.com/?t=jaws&quot;
+[5] pry(main)&gt; response = HTTParty.get( url )
+=&gt; &quot;{\&quot;Title\&quot;:\&quot;Jaws\&quot;,\&quot;Year\&quot;:\&quot;1975\&quot;,\&quot;Rated\&quot;:\&quot;PG\&quot;,\&quot;Released\&quot;:\&quot;20 Jun 1975\&quot;,\&quot;Runtime\&quot;:\&quot;124 min\&quot;,\&quot;Genre\&quot;:\&quot;Adventure, Horror, Thriller\&quot;,\&quot;Director\&quot;:\&quot;Steven Spielberg\&quot;,\&quot;Writer\&quot;:\&quot;Peter Benchley (screenplay), Carl Gottlieb (screenplay), Peter Benchley (novel)\&quot;,\&quot;Actors\&quot;:\&quot;Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary\&quot;,\&quot;Plot\&quot;:\&quot;When a gigantic great white shark begins to menace the small island community of Amity, a police chief, a marine scientist and grizzled fisherman set out to stop it.\&quot;,\&quot;Language\&quot;:\&quot;English\&quot;,\&quot;Country\&quot;:\&quot;USA\&quot;,\&quot;Awards\&quot;:\&quot;Won 3 Oscars. Another 9 wins &amp; 14 nominations.\&quot;,\&quot;Poster\&quot;:\&quot;http://ia.media-imdb.com/images/M/MV5BNDcxODkyMjY4MF5BMl5BanBnXkFtZTgwOTk5NTc5MDE@._V1_SX300.jpg\&quot;,\&quot;Metascore\&quot;:\&quot;79\&quot;,\&quot;imdbRating\&quot;:\&quot;8.1\&quot;,\&quot;imdbVotes\&quot;:\&quot;297,263\&quot;,\&quot;imdbID\&quot;:\&quot;tt0073195\&quot;,\&quot;Type\&quot;:\&quot;movie\&quot;,\&quot;Response\&quot;:\&quot;True\&quot;}&quot;
+[6] pry(main)&gt; response[&quot;Title&quot;]
+=&gt; &quot;Title&quot;
+[7] pry(main)&gt; response.headers
+=&gt; {&quot;cache-control&quot;=&gt;[&quot;no-cache&quot;], &quot;pragma&quot;=&gt;[&quot;no-cache&quot;], &quot;content-type&quot;=&gt;[&quot;text/html; charset=utf-8&quot;], &quot;expires&quot;=&gt;[&quot;-1&quot;], &quot;server&quot;=&gt;[&quot;Microsoft-IIS/7.5&quot;], &quot;x-aspnet-version&quot;=&gt;[&quot;4.0.30319&quot;], &quot;x-powered-by&quot;=&gt;[&quot;ASP.NET&quot;], &quot;access-control-allow-origin&quot;=&gt;[&quot;*&quot;], &quot;date&quot;=&gt;[&quot;Tue, 10 Jun 2014 06:08:59 GMT&quot;], &quot;connection&quot;=&gt;[&quot;close&quot;], &quot;content-length&quot;=&gt;[&quot;807&quot;]}
+[8] pry(main)&gt; JSON.parse(response)
+=&gt; {&quot;Title&quot;=&gt;&quot;Jaws&quot;,
+ &quot;Year&quot;=&gt;&quot;1975&quot;,
+ &quot;Rated&quot;=&gt;&quot;PG&quot;,
+ &quot;Released&quot;=&gt;&quot;20 Jun 1975&quot;,
+ &quot;Runtime&quot;=&gt;&quot;124 min&quot;,
+ &quot;Genre&quot;=&gt;&quot;Adventure, Horror, Thriller&quot;,
+ &quot;Director&quot;=&gt;&quot;Steven Spielberg&quot;,
+ &quot;Writer&quot;=&gt;
+  &quot;Peter Benchley (screenplay), Carl Gottlieb (screenplay), Peter Benchley (novel)&quot;,
+ &quot;Actors&quot;=&gt;&quot;Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary&quot;,
+ &quot;Plot&quot;=&gt;
+  &quot;When a gigantic great white shark begins to menace the small island community of Amity, a police chief, a marine scientist and grizzled fisherman set out to stop it.&quot;,
+ &quot;Language&quot;=&gt;&quot;English&quot;,
+ &quot;Country&quot;=&gt;&quot;USA&quot;,
+ &quot;Awards&quot;=&gt;&quot;Won 3 Oscars. Another 9 wins &amp; 14 nominations.&quot;,
+ &quot;Poster&quot;=&gt;
+  &quot;http://ia.media-imdb.com/images/M/MV5BNDcxODkyMjY4MF5BMl5BanBnXkFtZTgwOTk5NTc5MDE@._V1_SX300.jpg&quot;,
+ &quot;Metascore&quot;=&gt;&quot;79&quot;,
+ &quot;imdbRating&quot;=&gt;&quot;8.1&quot;,
+ &quot;imdbVotes&quot;=&gt;&quot;297,263&quot;,
+ &quot;imdbID&quot;=&gt;&quot;tt0073195&quot;,
+ &quot;Type&quot;=&gt;&quot;movie&quot;,
+ &quot;Response&quot;=&gt;&quot;True&quot;}
+[9] pry(main)&gt; moive.class
+NameError: undefined local variable or method `moive' for main:Object
+from (pry):9:in `__pry__'
+[10] pry(main)&gt; movie.class
+NameError: undefined local variable or method `movie' for main:Object
+from (pry):10:in `__pry__'
+[11] pry(main)&gt; @movie = JASON.parse response
+NameError: uninitialized constant JASON
+from (pry):11:in `__pry__'
+[12] pry(main)&gt; @movie = JSON.parse response
+=&gt; {&quot;Title&quot;=&gt;&quot;Jaws&quot;,
+ &quot;Year&quot;=&gt;&quot;1975&quot;,
+ &quot;Rated&quot;=&gt;&quot;PG&quot;,
+ &quot;Released&quot;=&gt;&quot;20 Jun 1975&quot;,
+ &quot;Runtime&quot;=&gt;&quot;124 min&quot;,
+ &quot;Genre&quot;=&gt;&quot;Adventure, Horror, Thriller&quot;,
+ &quot;Director&quot;=&gt;&quot;Steven Spielberg&quot;,
+ &quot;Writer&quot;=&gt;
+  &quot;Peter Benchley (screenplay), Carl Gottlieb (screenplay), Peter Benchley (novel)&quot;,
+ &quot;Actors&quot;=&gt;&quot;Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary&quot;,
+ &quot;Plot&quot;=&gt;
+  &quot;When a gigantic great white shark begins to menace the small island community of Amity, a police chief, a marine scientist and grizzled fisherman set out to stop it.&quot;,
+ &quot;Language&quot;=&gt;&quot;English&quot;,
+ &quot;Country&quot;=&gt;&quot;USA&quot;,
+ &quot;Awards&quot;=&gt;&quot;Won 3 Oscars. Another 9 wins &amp; 14 nominations.&quot;,
+ &quot;Poster&quot;=&gt;
+  &quot;http://ia.media-imdb.com/images/M/MV5BNDcxODkyMjY4MF5BMl5BanBnXkFtZTgwOTk5NTc5MDE@._V1_SX300.jpg&quot;,
+ &quot;Metascore&quot;=&gt;&quot;79&quot;,
+ &quot;imdbRating&quot;=&gt;&quot;8.1&quot;,
+ &quot;imdbVotes&quot;=&gt;&quot;297,263&quot;,
+ &quot;imdbID&quot;=&gt;&quot;tt0073195&quot;,
+ &quot;Type&quot;=&gt;&quot;movie&quot;,
+ &quot;Response&quot;=&gt;&quot;True&quot;}
+[13] pry(main)&gt; @movie['Actors']
+=&gt; &quot;Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary&quot;
+[14] pry(main)&gt;</pre>
+</div>
 <div created="20140606044142056" modified="20140606045443046" title="W1D1">
 <pre>!INFO
  * Joel - jturnbull@ga.co
@@ -4247,6 +4347,16 @@ check variables classes!
 
 !!READ
 :&gt;http://ruby-doc.org/</pre>
+</div>
+<div created="20140610061925628" modified="20140610063218963" title="W2D2">
+<pre>To Do:
+
+&gt; Movies 
+&gt;Spaces in Titles
+&gt;posters `&lt;img&gt;` 
+&gt;Read Sinatra README
+&gt;Ruby Monk
+</pre>
 </div>
 
 </div>
