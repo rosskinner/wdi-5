@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+
+body {
+  background-color: #234553;
+  color:white;
+  font-size: 140%;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+p {
+
+  font-family: 'Lobster Two', cursive;
+}
+
+.warning {
+  color:#349048;
+}
+
+#header{
+  text-decoration:underline;
+
+}

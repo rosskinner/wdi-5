@@ -5,6 +5,6 @@
 </form>
 
 <% if @title %>
-<p><%= @movie['Title'] %></p>
+<h2><%= @movie['Title'] %>, <em>(<%= @movie['Year'] %>)</em></h2>
 <img src="<%= @movie['Poster'] %>" alt="<%=@title%>">
 <% end %>
