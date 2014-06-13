@@ -10,7 +10,7 @@ class Robot
 
   end
 
-  def letters
+  def add
     (0..2).map {('A'..'Z').to_a[rand(27)]}.join
 
   end
