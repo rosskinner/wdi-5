@@ -1,0 +1,48 @@
+<form action="/processing" method ="get">
+
+  <label for="name">Your name:
+    <input id="name" type="text" name="name" placeholder="Name" required>
+  </label>
+
+  <label for="subscription_email">Your email:
+    <input type="email" name="user_email"  id="subscription_email" placeholder="yoname@gmail.com">
+  </label>
+
+  <label for="age">Age:
+    <input type="number" name="age" id="age">
+  </label>
+
+  <label for="favourite-color">
+    <input type="color" id="favourite-color" name="favourite-color">
+  </label>
+
+  <label for="satisfaction"> How likely are you to recommend this course?
+    <input type="range" name="satisfaction" id="satisfaction" minvalue="0" maxvalue="50">
+  </label>
+
+  <label for="bio">Your life story:
+    <textarea id ="bio" name="user_biography" placeholder="Tell me something about you"></textarea>
+
+    <label for="spam">Yes! I'd like to have Spam!
+      <input type="checkbox" name="spam" id="spam">
+    </label>
+  </label>
+
+  <label for="favourite-brother">
+    <input type="radio" name="favourite-brother" value="Groucho">Groucho
+    <input type="radio" name="favourite-brother" value="Harpo">Harpo
+    <input type="radio" name="favourite-brother" value="Chico">Chico
+    <input type="radio" name="favourite-brother" value="Zeppo">Zeppo
+  </label>
+
+  <label for="second-favourite-brother">2nd favourite marx brother:
+    <select name="second-favourite-brother">
+      <% "groucho harpo chico zeppo".split.each do |brother| %>
+      <option value="<%= brother.downcase %>"><%= brother.upcase %></option>
+      <% end %>
+    </select>
+  </label>
+
+
+  <button type="submit">Submit that shizzat</button>
+</form>
