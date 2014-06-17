@@ -14,48 +14,36 @@ body {
 
 }
 
+section {
+  display: inline-block;
+  margin:20px;
+}
+
+.bubble {
+  position:absolute;
+  width:100px;
+  height:100px;
+  bottom:100px;
+  right:200px;
+  padding:20px;
+  padding-top:0;
+  border: 1px solid #ccc;
+  border-radius: 100% 100% 0 100%;
+  box-sizing:border-box;
+}
+.squirrel {
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+.squirrel img {
+  width:200px;
+}
+
+
 header{
   background:#FFF;
   border-bottom:1px solid #ccc;
-}
-
-.results {
-  width:100%;
-  margin: 0 auto;
-  padding: 25px 50px;
-  box-sizing:border-box;
-  display:inline-block;
-  text-align: center
-}
-
-.text {
-  display: inline-block;
-  width:150px;
-  height:150px;
-  vertical-align: top;
-  padding: 10px;
-  padding-left: 50px;
-  background-color: #EF504F;
-  background:-webkit-linear-gradient( 90deg, #EF504F, #F06A6A );
-  border-radius: 0 100% 100% 100%;
-  border:1px solid #EF504F;
-  box-sizing:border-box;
-  color:#FFF;
-}
-.bottom {
-  position: absolute;
-  right:0;
-  bottom:0;
-  width:100px;
-  height:100px;
-  border-radius: 100% 100% 0 100%;
-  padding:10px;
-  padding-top:40px;
-  text-align: center;
-}
-
-.text h2 {
-  padding-top: 30px;
 }
 
 header h1 {
@@ -82,17 +70,26 @@ strong {
   font-weight:400;
 }
 nav {
-  text-align: right;
+  width:300px;
+  padding:30px;
+  height:100%;
+  display: inline-block;
+  box-sizing:border-box;
 }
 
+nav a {
+  display: block;
+  padding:20px;
+}
 
 a {
   text-decoration: none;
   color:inherit;
+
 }
 
 a:hover {
-  color:#EF504F;
+  color:#323A46;
 }
 
 
@@ -106,24 +103,30 @@ form {
   text-align:center;
 }
 
+input {
+  border:1px solid #ccc;
+  padding:10px;
+}
+
 button {
-  background-color: #EF504F;
-  background:-webkit-linear-gradient( 90deg, #EF504F, #F06A6A );
-  border:1px solid #EF504F;
+  background-color: #323A46;
+  background:-webkit-linear-gradient( 90deg, #323A46, #22282F );
+  border:1px solid #323A46;
   padding:10px;
   font-family: inherit;
   font-weight:100;
   font-size: 18px;
   color: #FFF;
   border-radius: 5px;
-  display:block;
+  display:inline-block;
   margin: 0 auto;
-  width:380px;
+  width:100px;
+  cursor: pointer;
 }
 
 
 button:hover{
-  background:-webkit-linear-gradient( 90deg, #F06A6A ,#EF504F);
+  background:-webkit-linear-gradient( 90deg, #22282F ,#323A46);
 }
 
 label {
