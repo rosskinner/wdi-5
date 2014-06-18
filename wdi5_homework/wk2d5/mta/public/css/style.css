@@ -136,3 +136,39 @@ select {
   background-color: #FFF;
   border:1px solid #ccc;
 }
+
+.trip {
+  position: relative;
+}
+
+.station {
+  width:20px;
+  height: 20px;
+  border: 5px solid #EF504F;
+  border-radius: 100%;
+  background:#FFF;
+  display:inline-block;
+  box-sizing:border-box;
+  margin:40px;
+  position:relative;
+}
+
+.station p {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  white-space: nowrap;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.connect {
+  width: 100px;
+  height: 1px;
+  border: 2px solid #EF504F;
+  background: #FFF;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 3px;
+}
+}

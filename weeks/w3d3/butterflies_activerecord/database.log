@@ -1,0 +1,12 @@
+D, [2014-06-18T12:20:06.721568 #35448] DEBUG -- :   [1m[36mButterfly Load (0.2ms)[0m  [1mSELECT  "butterflies".* FROM "butterflies"  WHERE "butterflies"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-18T12:20:06.728576 #35448] DEBUG -- :   [1m[35mButterfly Load (0.2ms)[0m  SELECT DISTINCT "butterflies"."family" FROM "butterflies"
+D, [2014-06-18T12:21:13.093458 #35448] DEBUG -- :   [1m[36mButterfly Load (0.3ms)[0m  [1mSELECT "butterflies".* FROM "butterflies"[0m
+D, [2014-06-18T12:21:13.094804 #35448] DEBUG -- :   [1m[35mButterfly Load (0.1ms)[0m  SELECT DISTINCT "butterflies"."family" FROM "butterflies"
+D, [2014-06-18T12:21:16.469570 #35448] DEBUG -- :   [1m[36mButterfly Load (0.1ms)[0m  [1mSELECT "butterflies".* FROM "butterflies"  WHERE "butterflies"."family" = 'Papilionidae'[0m
+D, [2014-06-18T12:21:16.470920 #35448] DEBUG -- :   [1m[35mButterfly Load (0.1ms)[0m  SELECT DISTINCT "butterflies"."family" FROM "butterflies"
+D, [2014-06-18T12:23:15.731945 #35448] DEBUG -- :   [1m[36mButterfly Load (0.2ms)[0m  [1mSELECT "butterflies".* FROM "butterflies"  WHERE "butterflies"."family" = 'Papilionidae'[0m
+D, [2014-06-18T12:23:15.733673 #35448] DEBUG -- :   [1m[35mButterfly Load (0.2ms)[0m  SELECT DISTINCT "butterflies"."family" FROM "butterflies"
+D, [2014-06-18T12:23:17.643453 #35448] DEBUG -- :   [1m[36mButterfly Load (0.2ms)[0m  [1mSELECT "butterflies".* FROM "butterflies"  WHERE "butterflies"."family" = 'Nymphalidae'[0m
+D, [2014-06-18T12:23:17.645669 #35448] DEBUG -- :   [1m[35mButterfly Load (0.3ms)[0m  SELECT DISTINCT "butterflies"."family" FROM "butterflies"
+D, [2014-06-18T12:23:19.588748 #35448] DEBUG -- :   [1m[36mButterfly Load (0.2ms)[0m  [1mSELECT "butterflies".* FROM "butterflies"  WHERE "butterflies"."family" = 'Papilionidae'[0m
+D, [2014-06-18T12:23:19.590711 #35448] DEBUG -- :   [1m[35mButterfly Load (0.2ms)[0m  SELECT DISTINCT "butterflies"."family" FROM "butterflies"
