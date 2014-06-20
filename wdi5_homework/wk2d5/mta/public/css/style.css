@@ -141,7 +141,7 @@ select {
   position: relative;
 }
 
-.station {
+.s {
   width:20px;
   height: 20px;
   border: 5px solid #EF504F;
@@ -153,7 +153,7 @@ select {
   position:relative;
 }
 
-.station p {
+.s p {
   margin: 0;
   padding: 0;
   display: inline;
@@ -170,5 +170,40 @@ select {
   display: inline-block;
   box-sizing: border-box;
   margin-top: 3px;
+}
+
+.union_square {
+  border: 5px solid #84CDC2;
+}
+
+.end {
+  border: 2px solid rgba(255,255,255,0);
+  background:rgba(255,255,255,0);
+}
+
+@media (max-width:400px) {
+  .bottom {
+    position:inherit;
+    margin-left:300px;
+  }
+
+  button {
+    width:100%;
+  }
+
+.s {
+  display:block;
+}
+
+.s p {
+  margin-left:40px;
+  margin-top:0;
+}
+.connect {
+  -webkit-transform: rotate(0.25turn);
+  position:absolute;
+  left:-33px;
+  top:32px;
+  width:75px;
 }
 }

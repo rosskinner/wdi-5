@@ -1,9 +1,17 @@
 require 'pry'
 require 'sinatra'
 require 'sinatra/reloader'
-require 'sqlite3'
+require 'active_record'
+
+ActiveRecord::Base.logger = Logger.new(STDERR)
+
+ActiveRecord::Base.establish_connection(
+  :adapter  => 'sqlite3',
+  :database => 'butterflies.db'
+)
 
 require_relative 'butterfly'
+require_relative 'plant'
 
 before do
   @families = Butterfly.select('family').uniq
@@ -17,16 +25,19 @@ get '/' do
   redirect to '/butterflies'
 end
 
-#All butterflies
+# All butterflies
 get '/butterflies' do
   @butterflies = Butterfly.all
-
   erb :butterflies
 end
 
-#family
+get '/plants' do
+  @plants = Plant.all
+  erb :plants
+end
+
 get '/butterflies/family/:family' do
-  @butterflies = Butterfly.where :family => params[:family]
+  @butterflies = Butterfly.where(:family => params[:family])
   erb :butterflies
 end
 
@@ -35,50 +46,88 @@ get '/butterflies/new' do
   erb :new_butterfly
 end
 
+get '/plants/new' do
+  erb :new_plant
+end
 
-
-#A specific butterfly
+# A specific butterfly
 get '/butterflies/:id' do
   id = params[:id]
   @butterfly = Butterfly.find id
   erb :butterfly
 end
 
-#Edit a butterfly
+get '/plants/:id' do
+  id = params[:id]
+
+  erb :plant
+end
+
+# Edit a butterfly
 get '/butterflies/:id/edit' do
   id = params[:id]
   @butterfly = Butterfly.find id
   erb :edit_butterfly
 end
 
-#Update a butterfly
-post '/butterflies/:id' do
-  butterfly = Butterfly.find params[:id]
-
-  butterfly.update_attributes :name => params[:name], :image => params[:image], :family => params[:family]
-  redirect to "/butterflies/#{butterfly.id}"
+get '/plants/:id/edit' do
+  id = params[:id]
+  @plant = Plant.find id
+  erb :edit_plant
 end
 
-#Delete butterfly
+# Update a butterfly
+post '/butterflies/:id' do
+  butterfly = Butterfly.find params[:id]
+  butterfly.name = params[:name]
+  butterfly.image = params[:image]
+  butterfly.family = params[:family]
+  butterfly.plant_id = params[:plant_id]
+  butterfly.save
+
+  redirect to "/butterflies/#{ butterfly.id }"
+end
+
+post '/plants/:id' do
+  plant = Plant.find params[:id]
+  plant.name = params[:name]
+  plant.image = params[:image]
+
+  plant.save
+
+  redirect to "plants/#{plant.id}"
+end
+
+# Delete a butterfly
 get '/butterflies/:id/delete' do
   id = params[:id]
   butterfly = Butterfly.find id
-
   butterfly.destroy
 
-  redirect to "/butterflies/#{butterfly.id}"
+  redirect to "/butterflies"
 end
 
-# Add new butterfly to database
+get '/plants/:id/delete' do
+  id = params[:id]
+  plant = Plant.find id
+  plant.destroy
+
+  redirect to "/plants"
+end
+
+# Add a new buttefly to the database
 post '/butterflies' do
-  # Long way of creating butterfly
-  # butterfly = Butterfly.new
-  # butterfly.name = params[:name]
-  # butterfly.image = params[:image]
-  # butterfly.family = params[:family]
+  Butterfly.create(
+    :name => params[:name],
+    :image => params[:image],
+    :family => params[:family],
+    :plant_id => params[:plant_id]
+    )
 
-  # butterfly.save
-
-  Butterfly.create :name => params[:name], :image => params[:image], :family => params[:family]
   redirect to '/butterflies'
+end
+
+post '/plants' do
+  Plant.create :name => params[:name], :image => params[:image]
+  redirect to '/plants'
 end

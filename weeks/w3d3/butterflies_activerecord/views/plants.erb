@@ -1,0 +1,19 @@
+<h2><%= @plant.name%></h2>
+
+<ul>
+<% @plant.butterflies.each do |butterfly| %>
+<li><a href="/butterflies/<%=butterfly.id %>"><%= butterfly.name%></a>
+
+<% end %>
+</ul>
+
+<% @plants.each do |plant| %>
+  <div class="butterfly">
+    <h3>
+      <a href="/butterflies/<%= plant.id%>">
+        <%= plant.name %>
+      </a>
+    </h3>
+    <img src="<%= plant.image %>">
+  </div>
+<% end %>

@@ -34,19 +34,26 @@
 
   <p>Your trip starts at <strong><%= @start_station %></strong> on the <strong><%= @start_line%></strong> line and ends at <strong><%= @end_station %></strong> on the <strong><%= @end_line %></strong> line.</p>
 
-  <p> Your stops: <strong><%="#{@trip} , #{@trip2}." %></strong></p>
+  <p> Your stops: <strong><%="#{@trip}." %></strong></p>
 
   <p>The number of stops in your trip is <strong><%= @journey%></strong>.</p>
   <section class="trip">
-    <% $lines.keys.each do |stations| stations%>
-    <% $lines[stations].each do |s| s %>
-    <div class="station"><p><%= s%></p><div class="connect"></div></div>
-    <% end %>
-    <% end %>
+
+    <% @trip.split(',').each do |station| %>
+    <% if station.strip == "Union Square"%>
+    <div class="s union_square"><p><%= station %></p>
+      <% else%>
+      <div class="<%= "s" %>"><p><%= station %></p>
+        <% end %>
+        <% if station.strip != @end_station%>
+        <div class="connect"></div>
+        <% else %>
+        <div class="connect end"></div>
+        <% end %>
+      </div>
+      <% end %>
+    </section>
   </section>
-</section>
-<section class="text bottom">
-  stops: <strong><%=@journey%></strong>
-</section>
-<% end%>
+
+  <% end%>
 

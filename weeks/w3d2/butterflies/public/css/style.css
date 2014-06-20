@@ -139,3 +139,7 @@ select {
   background-color: #FFF;
   border:1px solid #ccc;
 }
+
+img {
+  width:300px;
+}

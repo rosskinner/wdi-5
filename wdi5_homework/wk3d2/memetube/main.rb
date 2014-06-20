@@ -4,12 +4,26 @@ require 'pry'
 require 'pry-debugger'
 require 'sqlite3'
 
+require_relative 'video'
+
+before do
+  @genres = Video.select('genre').uniq.pluck(:genre)
+end
+
+after do
+  ActiveRecord::Base.connection.close
+end
 get '/' do
   redirect to '/memetube'
 end
 
 get '/memetube' do
-  @videos = query_db "SELECT * FROM videos"
+  @videos = Video.all
+  erb :memetube
+end
+
+get '/memetube/genre/:genre' do
+  @videos = Video.where :genre => params[:genre]
   erb :memetube
 end
 
@@ -19,11 +33,9 @@ end
 
 get '/memetube/:id' do
   id =params[:id]
-  sql = "SELECT * FROM videos WHERE id=#{id}"
-  @video = query_db sql
-  @video = @video.first
+  @video = Video.find id
 
-  @url_split = @video['url'].split(/&|=/)
+  @url_split = @video.id.split(/&|=/)
   @url = @url_split[1]
 
   erb :video
@@ -31,47 +43,28 @@ end
 
 get '/memetube/:id/edit' do
   id = params[:id]
-  sql = "SELECT * FROM videos WHERE id =#{id}"
-  @video = query_db sql
-  @video = @video.first
+  @video = Video.find id
   erb :edit
 end
 
 post '/memetube/:id' do
   id = params[:id]
-  title = params[:title]
-  description = params[:description]
-  url = params[:url]
-  genre = params[:genre]
+  video = Video.find id
 
-  sql = "UPDATE videos SET title='#{title}', description='#{description}', url='#{url}', genre='#{genre}' WHERE id='#{id}'"
-  query_db sql
+  video.update_attributes :title => params[:title], :description => params[:description], :url => params[:url], :genre => [:genre]
 
-  redirect to "/memetube/#{id}"
+  redirect to "/memetube/#{video.id}"
 end
 
 
 get '/memetube/:id/delete' do
   id = params[:id]
-  sql = "DELETE FROM videos WHERE id =#{id}"
-  query_db sql
+  video = Video.find id
+  video.destroy
   redirect to "/memetube"
 end
 
 post '/memetube' do
-  title = params[:title]
-  description = params[:description]
-  url = params[:url]
-  genre = params[:genre]
-  sql = "INSERT INTO videos (title, description, url, genre) VALUES ('#{title}', '#{description}', '#{url}', '#{genre}')"
-  query_db sql
+  Video.create :title => params[:title], :description => params[:description], :url => params[:url], :genre => [:genre]
   redirect to '/memetube'
-end
-
-def query_db(sql)
-  db =SQLite3::Database.new "videos.db"
-  db.results_as_hash = true
-  result = db.execute sql
-  db.close
-  result
 end

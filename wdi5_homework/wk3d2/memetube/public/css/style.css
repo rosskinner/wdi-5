@@ -110,8 +110,25 @@ nav {
   display: inline-block;
   text-align: right;
   width: 80%;
+  position:relative;
 }
 
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li ul li {
+  text-align: left;
+
+}
+
+nav ul li ul {
+  display:absolute;
+  z-index:2;
+}
 input {
   font-size: 1em;
   font-family: inherit;

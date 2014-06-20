@@ -1,0 +1,49 @@
+D, [2014-06-18T15:57:16.233264 #36115] DEBUG -- :   [1m[36mVideo Load (1.6ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T15:58:13.891344 #36115] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"
+D, [2014-06-18T16:00:42.301907 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T16:01:36.911271 #36115] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"
+D, [2014-06-18T16:04:28.679944 #36115] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T16:04:28.681913 #36115] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"
+D, [2014-06-18T16:04:31.299298 #36115] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T16:04:31.311260 #36115] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE "videos"."genre" = 'Comedy'
+D, [2014-06-18T16:09:15.668472 #36115] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T16:09:15.670449 #36115] DEBUG -- :   [1m[35mVideo Load (0.3ms)[0m  SELECT "videos".* FROM "videos"  WHERE "videos"."genre" = 'Cats'
+D, [2014-06-18T16:09:17.988813 #36115] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T16:09:17.990355 #36115] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"  WHERE "videos"."genre" = 'Sport'
+D, [2014-06-18T16:36:09.215619 #36115] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T16:36:09.222898 #36115] DEBUG -- :   [1m[35mVideo Load (0.3ms)[0m  SELECT "videos".* FROM "videos"  WHERE "videos"."genre" = 'Sport'
+D, [2014-06-18T16:38:09.150268 #36115] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T16:38:09.152845 #36115] DEBUG -- :   [1m[35mVideo Load (0.2ms)[0m  SELECT "videos".* FROM "videos"  WHERE "videos"."genre" = 'Sport'
+D, [2014-06-18T16:39:06.065269 #36115] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T16:39:06.067087 #36115] DEBUG -- :   [1m[35mVideo Load (0.1ms)[0m  SELECT "videos".* FROM "videos"  WHERE "videos"."genre" = 'Sport'
+D, [2014-06-18T16:39:20.071217 #36115] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mSELECT DISTINCT "videos"."genre" FROM "videos"[0m
+D, [2014-06-18T16:39:21.652893 #36115] DEBUG -- :   [1m[35m (0.6ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T16:39:21.655112 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T16:39:38.754958 #36115] DEBUG -- :   [1m[35m (3.0ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T16:39:38.756983 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T16:40:14.597668 #36115] DEBUG -- :   [1m[35m (0.3ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T16:40:14.599314 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T16:40:38.719417 #36115] DEBUG -- :   [1m[35m (0.3ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T16:40:38.721367 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T16:41:51.008779 #36115] DEBUG -- :   [1m[35m (0.3ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T16:41:51.011130 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T16:42:33.028442 #36115] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T16:42:33.030178 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T16:43:03.452840 #36115] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T16:43:03.454415 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T16:45:26.196813 #36115] DEBUG -- :   [1m[35m (3.5ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T16:45:26.199766 #36115] DEBUG -- :   [1m[36mVideo Load (0.3ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T16:46:42.633342 #36115] DEBUG -- :   [1m[35m (0.3ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T16:46:42.634851 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T17:07:18.251816 #36115] DEBUG -- :   [1m[35m (0.4ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T17:07:18.253338 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T17:07:34.796126 #36115] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T17:07:34.797612 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T17:08:14.064166 #36115] DEBUG -- :   [1m[35m (0.5ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T17:08:14.065769 #36115] DEBUG -- :   [1m[36mVideo Load (0.3ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T17:08:58.397423 #36115] DEBUG -- :   [1m[35m (0.6ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T17:08:58.398948 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T17:10:14.204597 #36115] DEBUG -- :   [1m[35m (0.4ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T17:10:14.206898 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+D, [2014-06-18T17:10:58.129855 #36115] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT DISTINCT "videos"."genre" FROM "videos"
+D, [2014-06-18T17:10:58.131473 #36115] DEBUG -- :   [1m[36mVideo Load (0.2ms)[0m  [1mSELECT "videos".* FROM "videos"[0m

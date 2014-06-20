@@ -11,5 +11,14 @@
     <option><%= family %></option>
     <% end %>
   </select>
+
+  <label for="plant">Plant:</label>
+  <select name="plant_id" id="plant">
+  <option value="0"></option>
+    <% Plant.all.each do |plant| %>
+    <option value="<%= plant.id %>"></option>
+    <% end %>
+  </select>
+
   <button>Add</button>
 </form>

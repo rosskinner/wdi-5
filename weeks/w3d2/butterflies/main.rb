@@ -3,6 +3,8 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sqlite3'
 
+require_relative 'butterfly'
+require_relatice 'plant'
 
 before do
   @families = query_db "SELECT DISTINCT(family) FROM butterflies"
