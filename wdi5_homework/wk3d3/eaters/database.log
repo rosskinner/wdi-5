@@ -1,243 +1,99 @@
-D, [2014-06-19T07:43:02.601196 #691] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-D, [2014-06-19T07:43:02.609109 #691] DEBUG -- :   [1m[35m (0.1ms)[0m  rollback transaction
-D, [2014-06-19T07:43:06.030345 #691] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-D, [2014-06-19T07:43:06.030966 #691] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
-D, [2014-06-19T07:45:49.726547 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T07:45:49.738387 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T07:53:43.414256 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T07:53:43.415579 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T07:55:31.399428 #691] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T07:55:31.400935 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:12:28.219175 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:12:28.220448 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:12:44.016900 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:12:44.018511 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:12:54.272895 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:12:54.274236 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:13:37.102538 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:13:37.103877 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:15:28.645643 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:15:28.646772 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:20:31.054264 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:20:31.055552 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:20:45.870036 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:20:45.871241 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:23:47.031188 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:23:47.032576 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:23:49.297007 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."category" = 'Bar'[0m
-D, [2014-06-19T08:23:49.298098 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:23:50.813693 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."category" = 'Cafe'[0m
-D, [2014-06-19T08:23:50.815419 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:23:51.899156 #691] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."category" = 'Restaurant'[0m
-D, [2014-06-19T08:23:51.901519 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:23:53.338613 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:23:53.340792 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:24:19.335994 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:24:19.337384 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:24:32.621614 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:24:32.623103 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:26:53.783873 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:26:53.785054 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:27:17.615804 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."category" = 'Restaurant'[0m
-D, [2014-06-19T08:27:17.618168 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:27:19.369042 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."category" = 'Cafe'[0m
-D, [2014-06-19T08:27:19.371306 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:27:20.648404 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."category" = 'Bar'[0m
-D, [2014-06-19T08:27:20.651071 #691] DEBUG -- :   [1m[35mPlace Load (0.3ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:27:21.491815 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:27:21.493143 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:31:40.883191 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:31:40.884943 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:38:03.025776 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:38:03.027625 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:38:34.179120 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."category" = 'Bar'[0m
-D, [2014-06-19T08:38:34.180442 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:38:35.199812 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:38:35.202016 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:39:06.984378 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T08:39:28.067187 #691] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
-D, [2014-06-19T08:39:28.069284 #691] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
-D, [2014-06-19T08:48:24.592669 #691] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
-D, [2014-06-19T08:48:24.593594 #691] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("area", "category", "image", "name", "phone", "rating", "review", "url") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["area", "West"], ["category", "Cafe"], ["image", "http://www.broadsheet.com.au/media/cache/27/e4/27e4ad229ab328838103587b666b846d.jpg"], ["name", "Circa Specialty Coffee"], ["phone", "02 8896 6071"], ["rating", "4"], ["review", "  wdefrgh"], ["url", "http://circaespresso.com.au/"]]
-D, [2014-06-19T08:48:24.602354 #691] DEBUG -- :   [1m[35m (8.5ms)[0m  commit transaction
-D, [2014-06-19T08:48:24.608961 #691] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-D, [2014-06-19T08:48:24.609834 #691] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("area", "category", "image", "name", "phone", "rating", "review", "url") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["area", "West"], ["category", "Cafe"], ["image", "http://www.broadsheet.com.au/media/cache/27/e4/27e4ad229ab328838103587b666b846d.jpg"], ["name", "Circa Specialty Coffee"], ["phone", "02 8896 6071"], ["rating", "4"], ["review", "  wdefrgh"], ["url", "http://circaespresso.com.au/"]]
-D, [2014-06-19T08:48:24.611322 #691] DEBUG -- :   [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
-D, [2014-06-19T08:48:52.051997 #691] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
-D, [2014-06-19T08:48:52.052723 #691] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("area", "category", "image", "name", "phone", "rating", "review", "url") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["area", "West"], ["category", "Cafe"], ["image", "http://www.broadsheet.com.au/media/cache/27/e4/27e4ad229ab328838103587b666b846d.jpg"], ["name", "Circa Specialty Coffee"], ["phone", "02 8896 6071"], ["rating", "4"], ["review", "  wdefrgh"], ["url", "http://circaespresso.com.au/"]]
-D, [2014-06-19T08:48:52.061001 #691] DEBUG -- :   [1m[35m (8.1ms)[0m  commit transaction
-D, [2014-06-19T08:48:52.065749 #691] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-D, [2014-06-19T08:48:52.066926 #691] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("area", "category", "image", "name", "phone", "rating", "review", "url") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["area", "West"], ["category", "Cafe"], ["image", "http://www.broadsheet.com.au/media/cache/27/e4/27e4ad229ab328838103587b666b846d.jpg"], ["name", "Circa Specialty Coffee"], ["phone", "02 8896 6071"], ["rating", "4"], ["review", "  wdefrgh"], ["url", "http://circaespresso.com.au/"]]
-D, [2014-06-19T08:48:52.067758 #691] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
-D, [2014-06-19T08:48:54.985417 #691] DEBUG -- :   [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T08:48:54.987815 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T08:49:48.111452 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T08:52:44.985031 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T08:52:44.986676 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T08:52:44.988160 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T08:54:30.778355 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T08:54:30.779881 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:54:30.781706 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:54:55.168299 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T08:54:55.170070 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T08:54:55.171558 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T08:55:21.022355 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T08:55:21.024075 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:55:21.025608 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:55:34.410613 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T08:55:34.412232 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T08:55:34.414049 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T08:57:41.398604 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T08:57:41.400319 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:57:41.401773 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:58:14.435385 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T08:58:14.437041 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T08:58:14.464354 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T08:58:44.465434 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T08:58:44.467452 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:58:44.469207 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:58:52.701588 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T08:58:52.703216 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T08:58:52.704852 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T08:59:25.882845 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T08:59:25.885329 #691] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T08:59:25.888065 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T08:59:42.440781 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T08:59:42.442493 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T08:59:42.444537 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:00:03.296675 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:00:03.299106 #691] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:00:03.301581 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:00:09.400536 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:00:09.402289 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:00:09.404109 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:00:15.745803 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:00:15.747639 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:00:15.749364 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:00:22.621057 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:00:22.622936 #691] DEBUG -- :   [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:00:22.625205 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:00:27.139679 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:00:27.141418 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:00:27.143324 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:00:34.062170 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:00:34.064305 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:00:34.065710 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:01:14.581545 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:01:14.583948 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:01:14.585480 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:01:28.635410 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:01:28.637328 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:01:28.638876 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:01:45.939204 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:01:45.940928 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:01:45.942480 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:02:00.090594 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:02:00.092325 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:02:00.093907 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:02:07.119606 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:03:46.315539 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:04:13.981570 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:04:13.984396 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:06:06.850003 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:06:06.850270 #691] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
-D, [2014-06-19T09:06:06.851398 #691] DEBUG -- :   [1m[35m (0.0ms)[0m  rollback transaction
-D, [2014-06-19T09:06:18.640736 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:06:18.641021 #691] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
-D, [2014-06-19T09:06:18.641861 #691] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mUPDATE "places" SET "review" = ? WHERE "places"."id" = 1[0m  [["review", "  Circa is another spot where you’ll find some of the best coffee on offer well outside of the CBD or inner west. It’s a tiny hole-in-the-wall cafe, but don’t be deceived. Wander past the bustling entrance with the barista on show and you’ll be greeted by a long, slim cafe that stretches past the tiny kitchen to a backroom nook. It’s full of knick-knacks and trinkets that echo libraries, museums and science labs past. Mock windows frame mock views, copper pipes line the walls and warm plywood panelling abounds. But it’s not the eclectic décor that people flock here for – it’s the house blend coffee roasted by Five Senses and served double ristretto style (best enjoyed with milk).\r\n\r\nTony Sleiman and Aykut Sayan have nurtured this little warehouse conversion into a wildly popular local haunt, with street-side seating, colourful wall art and a breakfast and lunch menu that offers still-sizzling baked eggs in the pan, spiced French puy lentils or slow braised beef brisket sandwiches. The gleaming cold-drip dominates one corner, while pour-over and aero-press are on offer too, with filter of the week and reserve selection single origin (from the Five Senses back room). But Blue Mountains sticky chai and West African red hot chocolate make for great winter warmers, and there’s a hefty selection of teas on offer too."]]
-D, [2014-06-19T09:06:18.651062 #691] DEBUG -- :   [1m[35m (9.0ms)[0m  commit transaction
-D, [2014-06-19T09:06:18.657254 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:06:18.659023 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:06:18.660560 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:06:49.738304 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:06:49.748409 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:07:17.001355 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:07:17.001687 #691] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-D, [2014-06-19T09:07:17.004294 #691] DEBUG -- :   [1m[35mSQL (0.8ms)[0m  UPDATE "places" SET "review" = ? WHERE "places"."id" = 1  [["review", "  Circa is another spot where you’ll find some of the best coffee on offer well outside of the CBD or inner west. It’s a tiny hole-in-the-wall cafe, but don’t be deceived. Wander past the bustling entrance with the barista on show and you’ll be greeted by a long, slim cafe that stretches past the tiny kitchen to a backroom nook. It’s full of knick-knacks and trinkets that echo libraries, museums and science labs past. Mock windows frame mock views, copper pipes line the walls and warm plywood panelling abounds. But it’s not the eclectic décor that people flock here for – it’s the house blend coffee roasted by Five Senses and served double ristretto style (best enjoyed with milk).\r\n\r\n<p>Tony Sleiman and Aykut Sayan have nurtured this little warehouse conversion into a wildly popular local haunt, with street-side seating, colourful wall art and a breakfast and lunch menu that offers still-sizzling baked eggs in the pan, spiced French puy lentils or slow braised beef brisket sandwiches. The gleaming cold-drip dominates one corner, while pour-over and aero-press are on offer too, with filter of the week and reserve selection single origin (from the Five Senses back room). But Blue Mountains sticky chai and West African red hot chocolate make for great winter warmers, and there’s a hefty selection of teas on offer too.</p>"]]
-D, [2014-06-19T09:07:17.005443 #691] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
-D, [2014-06-19T09:07:17.012382 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:07:17.014109 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:07:17.050807 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:07:46.550191 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:07:46.558101 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:07:46.560495 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:08:20.159077 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:08:20.162664 #691] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:08:20.166631 #691] DEBUG -- :   [1m[35mPlace Load (0.4ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:08:27.427618 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:08:27.429317 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:08:27.431075 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:09:31.165894 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
-D, [2014-06-19T09:09:31.167711 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:09:31.169248 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:10:17.472615 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:10:17.474214 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:10:17.475702 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:10:30.723947 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"  WHERE "places"."category" = 'Bar'
-D, [2014-06-19T09:10:30.726222 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:10:32.077767 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"  WHERE "places"."category" = 'Cafe'
-D, [2014-06-19T09:10:32.079146 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:10:34.040281 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places".* FROM "places"  WHERE "places"."category" = 'Restaurant'
-D, [2014-06-19T09:10:34.041344 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:10:35.082096 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:10:35.083560 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:11:07.820821 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:11:07.822409 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:11:18.391089 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 2]]
-D, [2014-06-19T09:11:18.393597 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:11:18.396066 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:11:22.294323 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 2]]
-D, [2014-06-19T09:11:22.304698 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:17:58.688788 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 2]]
-D, [2014-06-19T09:17:58.689071 #691] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
-D, [2014-06-19T09:17:58.692569 #691] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mUPDATE "places" SET "area" = ?, "image" = ?, "name" = ?, "phone" = ?, "review" = ?, "url" = ? WHERE "places"."id" = 2[0m  [["area", "Inner West"], ["image", "http://www.broadsheet.com.au/media/cache/6c/bb/6cbbf04b69c6f1592d95593f3f6ef7c2.jpg"], ["name", "The Grounds of Alexandria"], ["phone", "(02) 9699 2225"], ["review", " <p>Headed up by creative entrepreneur Ramsey Choker and renowned coffee guru Jack Hanna, The Grounds is an innovative, sustainable specialty coffee outfit combining science, industrialism and organic gardens into one awe-inspiring space.</p>\r\n<p>\r\nBuilt into the remnants of a heritage-listed warehouse and spilling into an enormous courtyard and organic garden in Sydney’s west, The Grounds is both stunning and about as culturally indispensible as the harbour bridge, having once been the Four’N Twenty pie factory.</p>\r\n<p>\r\nNot to be overshadowed by the incredible standard of coffee, a tantalising food menu encompasses a wholesome, home-style selection of dishes, like the slow-roasted, pulled-pork sandwich with slaw and handmade pappardelle.</p>\r\n<p>\r\nSeparate to the kitchen, The Grounds bakery boasts an 800kg bread oven imported from Germany that churns out a huge selection of house breads and sweet pastries, including a signature potato and onion flatbread.</p>\r\n<p>\r\nThe Grounds’ NASA standard of coffee toys puts everyone at serious risk of hyperventilating. There’s a new generation Syneso espresso machine (one of the first in Australia), a customised Clover brewer, Twin 7kg Probat roasters, volumetric milk taps (invented by The Grounds) and the crown jewel, a one of a kind, retrofitted GS2 espresso machine sitting atop a purpose-built brew bar made from a remoulded shipping container.</p>\r\n<p>\r\nLike the Large Hadron Collider of specialty coffee, The Grounds represents a quantum leap in Sydney’s emerging coffee culture. Drop down for a brew before it becomes a rock concert of popularity.</p>"], ["url", "http://groundsroasters.com"]]
-D, [2014-06-19T09:17:58.694507 #691] DEBUG -- :   [1m[35m (1.4ms)[0m  commit transaction
-D, [2014-06-19T09:17:58.703026 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 2]]
-D, [2014-06-19T09:17:58.705512 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:17:58.707908 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:20:31.481529 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 2]]
-D, [2014-06-19T09:20:31.483132 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:20:31.485489 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:20:34.673506 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 0]]
-D, [2014-06-19T09:20:49.966519 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 0]]
-D, [2014-06-19T09:20:52.996518 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 2]]
-D, [2014-06-19T09:20:52.998373 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:20:52.999760 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:20:57.088029 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 2]]
-D, [2014-06-19T09:20:57.089762 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:20:57.099131 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:21:00.699972 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
-D, [2014-06-19T09:21:00.701918 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:21:00.703669 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:21:01.923885 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 2]]
-D, [2014-06-19T09:21:01.926349 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:21:01.928743 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:21:10.992659 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:21:10.994100 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:22:55.709689 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 0]]
-D, [2014-06-19T09:23:02.447335 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 0]]
-D, [2014-06-19T09:23:29.593944 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."rating" = '4'[0m
-D, [2014-06-19T09:23:29.628577 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:23:55.758037 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:24:48.448565 #691] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
-D, [2014-06-19T09:24:48.450255 #691] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("area", "category", "image", "name", "phone", "rating", "review", "url") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["area", "xfcgvhjb"], ["category", "bar"], ["image", "http://www.broadsheet.com.au/media/cache/27/e4/27e4ad229ab328838103587b666b846d.jpg"], ["name", "cfgvhbkj"], ["phone", "fcgvh"], ["rating", "2"], ["review", "  wegtfh"], ["url", "http://broadhsheet.com.au"]]
-D, [2014-06-19T09:24:48.451104 #691] DEBUG -- :   [1m[35m (0.5ms)[0m  commit transaction
-D, [2014-06-19T09:24:50.603149 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
-D, [2014-06-19T09:24:50.604603 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:25:07.521310 #691] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."rating" = '4'[0m
-D, [2014-06-19T09:25:07.523025 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:25:10.761691 #691] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."rating" = '2'[0m
-D, [2014-06-19T09:25:10.764140 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
-D, [2014-06-19T09:25:16.354617 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 5]]
-D, [2014-06-19T09:25:16.355995 #691] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:25:16.357230 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:25:34.485851 #691] DEBUG -- :   [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:25:34.488560 #691] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:26:14.413497 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"  WHERE "places"."category" = 'Bar'
-D, [2014-06-19T09:26:14.414817 #691] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:26:20.360102 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"  WHERE "places"."category" = 'bar'
-D, [2014-06-19T09:26:20.362128 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:26:24.852602 #691] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"  WHERE "places"."category" = 'Cafe'
-D, [2014-06-19T09:26:24.854438 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
-D, [2014-06-19T09:26:27.372558 #691] DEBUG -- :   [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
-D, [2014-06-19T09:26:27.375071 #691] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T18:08:24.472311 #10404] DEBUG -- :   [1m[36mPlace Load (1.9ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T18:08:24.482338 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T18:08:29.277919 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T18:08:29.279275 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T18:11:03.944956 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T18:11:03.946885 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T19:24:00.986937 #10404] DEBUG -- :   [1m[36mPlace Load (1.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2014-06-21T19:24:00.991997 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T19:24:00.994768 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T19:24:04.391589 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-21T19:24:04.402885 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T19:44:47.864400 #10404] DEBUG -- :   [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-21T19:44:47.865283 #10404] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+D, [2014-06-21T19:44:47.922425 #10404] DEBUG -- :   [1m[35mSQL (1.3ms)[0m  UPDATE "places" SET "area" = ?, "category" = ?, "image" = ?, "name" = ?, "phone" = ?, "review" = ?, "url" = ? WHERE "places"."id" = 3  [["area", "Inner West"], ["category", "Bar"], ["image", "http://www.broadsheet.com.au/media/cache/26/11/26112e927ac101329c8fd7f63bac04bc.jpg"], ["name", "The Chip Off the Old Block"], ["phone", "9318 0815"], ["review", " <p> Recent years have seen Chippendale take an artsy turn away from its convict roots. Since the introduction of the Chippendale Creative Precinct in 2010, this gritty, central neighbourhood has been turning heads, as top chefs and artists fill the open spaces.</p>\r\n<p>\r\nThe Creative Precinct is headed up by Nicky Ginsberg, and it appears she isn’t the only of the Ginsberg family caught in the thick of Chippendale’s restoration. Daughter Katya has recently made headlines with the opening of The Chip Off the Old Block. The new small bar on Little Queen Street is in the downstairs space of a gothic-revival church.</p>\r\n<p>\r\n\r\n“We’re a hospitality family,” Ginsberg says, “which is how I got the inspiration for the name; I’m a bit of a chip off the old block, so to speak.” Playing on not only the family’s English heritage but on that of the suburb, Ginsberg wanted to introduce a venue which would send expats and travellers on a journey back to the motherland.</p>\r\n<p>\r\nBacon butty sarnies, bubble and squeak pie and fish and chips wrapped in newspaper share space on a menu that is as English as they come. The cocktail list matches well, full of English idioms. Gin & Bear It mixes gin, cinnamon whisky, orange and ginger beer and an English Rose is a sweetly simple mix of Hendrick’s, rose syrup and cucumber.</p>\r\n<p>\r\nThe beer and wine isn’t as Brit influenced. A list of craft beers only includes four British imports and wines are mainly from Australia, bar a couple of French numbers. Beers come in bottles tucked into brown-paper bags, and cocktails come in an array of jars and haphazard glassware; a likely choice but we can’t help but feel that Sydney may be approaching its capacity for drinking out of a jar.</P"], ["url", "http://thechipofftheoldblock.com.au"]]
+D, [2014-06-21T19:44:47.923475 #10404] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2014-06-21T19:44:47.928315 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 3]]
+D, [2014-06-21T19:44:47.930303 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T19:44:47.932157 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T19:44:56.263966 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T19:44:56.265757 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T19:56:58.417042 #10404] DEBUG -- :   [1m[36mPlace Load (7.9ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 4]]
+D, [2014-06-21T19:56:58.421472 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T19:56:58.425188 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T19:57:04.348246 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-21T19:57:04.360145 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T19:59:35.290326 #10404] DEBUG -- :   [1m[35mPlace Load (3.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-21T19:59:35.290759 #10404] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-21T19:59:35.292581 #10404] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "places" SET "area" = ?, "category" = ?, "image" = ?, "name" = ?, "phone" = ?, "rating" = ?, "review" = ? WHERE "places"."id" = 4  [["area", "City"], ["category", "Bar"], ["image", "http://www.broadsheet.com.au/media/cache/2c/9f/2c9faf1c1513692a4f97310a93d82bcb.jpg"], ["name", "Assembly"], ["phone", "(02) 9283 8808"], ["rating", "5"], ["review", "  <p>Next time your foraging for cocktails at Sydney’s centre, or hankering for pork and fennel hotdogs with wasabi, Assembly is the perfect place to assemble. Owned and operated by Ben Touass – the very French, very inspired mind who launched Darlinghurst’s Pocket Bar – Assembly manages to merge childish abandon with a great deal of taste and refinement.</p>\r\n<p>\r\nDescending the escalator from George Street, you can look down on Assembly’s artificial courtyard, complete with Astroturf, picnic tables and enough plastic ivy to consume a rather large wall. Its kindergarten qualities immediately conjure memories of recess and hopscotch, although the name Assembly doesn’t refer to any deliberate theme.</p>\r\n<p>\r\nInside, the mood takes a less adolescent turn. The warm glow of industrial lights illuminates sections of the open-plan space, while makeshift walls constructed from loading pallets split the room into more intimate squares. A set of spiral stairs ascends to a lofty lounge area above the bar, where an ingenious drink-elevator hoists refreshments from the bar below.</p>\r\n<p>\r\nPrepared with ninja-like athleticism, Assembly boasts a swathe of classic, original and sponsored cocktails. Doing away with longwinded sensory descriptions, they appear on the menu as simple equations like “2 x (gin + maraschino liqueur + green chartreuse + lime juice) shaken & strained + chilled martini glass = Last Words”. There’s a creative and semi-scientific style to some cocktails such as the Lavender Hill Cappuccino, a concoction of French rum, lime and cloudy apple juice with a thick apple and lavender foam garnished with a pop-rock filled mint leaf.</p>\r\n<p>\r\nAn equally creative food menu goes beyond the realms of snacking, encompassing soul food and sizable share plates that compliment wine and cocktails alike. Anything from their selection of gourmet hotdogs would be our recommendation.</p>"]]
+D, [2014-06-21T19:59:35.293677 #10404] DEBUG -- :   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+D, [2014-06-21T19:59:35.301170 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 4]]
+D, [2014-06-21T19:59:35.303768 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T19:59:35.306419 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:00:05.640139 #10404] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-21T20:00:05.641741 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T20:00:05.643141 #10404] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T20:02:38.508698 #10404] DEBUG -- :   [1m[35mPlace Load (2.6ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 5]]
+D, [2014-06-21T20:02:38.521625 #10404] DEBUG -- :   [1m[36mPlace Load (1.1ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T20:02:38.525066 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:02:41.510208 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-21T20:02:41.521536 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:05:00.270496 #10404] DEBUG -- :   [1m[36mPlace Load (0.4ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-21T20:05:00.271264 #10404] DEBUG -- :   [1m[35m (0.2ms)[0m  begin transaction
+D, [2014-06-21T20:05:00.274799 #10404] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "places" SET "area" = ?, "category" = ?, "image" = ?, "name" = ?, "phone" = ?, "rating" = ?, "review" = ?, "url" = ? WHERE "places"."id" = 5[0m  [["area", "North Shore"], ["category", "Restaurant"], ["image", "http://www.broadsheet.com.au/media/cache/f9/f4/f9f4814839dd22ab5bded9cad20e00d4.jpg"], ["name", "Batch Burgers & Espresso"], ["phone", "(02) 9929 8883"], ["rating", "3"], ["review", "  <p>Batch Burgers & Espresso has hoisted its flag in Kiribilli for the stars and stripes. Brought to us by the man behind Batch No. 1 Espresso in the CBD, it’s a cosy and noisy little spot, reminiscent of scenes from a 1950s film, dominated by a big counter with bar stools and a bright neon sign.</p>\r\n<p>\r\nThey’re open from breakfast until well past dinner, with the beefy breakfast burger and breakfast burrito making popular breakfast options. But it’s the hearty lunch and dinner menu that sees locals vying for a spot at the bar. Chicken and beef burgers are the go-to (complete with fluffy Brasserie Bread buns), but hotdogs and chilli-dogs are well represented too. It’s American to the core, but there’s a nod to the international, with burgers including The French (blue cheese) and Mexican (jalapeños and hot taco sauce).</p>\r\n<p>\r\nShakes come with mix-ins like Cherry Ripe or Mars Bar and there’s a flavour of the week to keep an eye out for, as well as desserts of waffles with Canadian maple syrup or a banana split. So pull up a stool and check out your placemat menu – the American diner is here.</p>"], ["url", "http://batchburger.com"]]
+D, [2014-06-21T20:05:00.275878 #10404] DEBUG -- :   [1m[35m (0.8ms)[0m  commit transaction
+D, [2014-06-21T20:05:00.282075 #10404] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 5]]
+D, [2014-06-21T20:05:00.284437 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T20:05:00.287565 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T20:05:08.713484 #10404] DEBUG -- :   [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T20:05:08.719613 #10404] DEBUG -- :   [1m[36mPlace Load (1.0ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T20:07:33.503348 #10404] DEBUG -- :   [1m[35mPlace Load (0.5ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:09:30.992580 #10404] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-21T20:09:30.996095 #10404] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  INSERT INTO "places" ("area", "category", "image", "name", "phone", "rating", "review", "url") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["area", "East"], ["category", "Cafe"], ["image", "http://www.broadsheet.com.au/media/cache/df/97/df97b82da0c1497b4f7b76110fccbffa.jpg"], ["name", "Lox Stock and Barrel"], ["phone", "(02) 9300 0368"], ["rating", "5"], ["review", "  <p>The brother and sister team, Neil and Lianne Gottheiner, who brought us Brown Sugar on Curlewis Street, have expanded their operation into a freshly whitewashed space around the corner – Lox Stock & Barrel – where they’re busily preaching the pleasures of New York-style deli fare. With head chef Kurt Mengetti, previously of Baroque, working hard in the kitchen, it’s something of a European dream team.</p>\r\n<p>\r\nFour varieties of chewy, pleasantly dense bagels are boiled onsite every day. They’re not too sweet and if it’s a truly Jewish-style meal you’re hankering for, try the cafe’s chopped liver, egg and onion on a sweet onion bagel with a side of pickles, or the house-made brisket pastrami on rye, brought in from Bondi’s Organic Bakery, just down the road.</p>\r\n<p>\r\nIf it's something lighter you're after, salads are textural, fresh and herby. Sustainable fish is used with tasty, cured sardines on grilled toast, or slices of albacore tuna in a panini with jalapenos and miso-dressed slaw. Match it with a Bloody Mary mixed with pickled jalapenos and house-made tomato juice.\r\n</p>\r\n<p>\r\nGypsy coffee is extracted by hand through a truly old-school, lever-powered manual piston coffee machine. Pop in for breakfast or lunch (and soon for dinner), but if the current trade is anything to go by, it's time to head beachside sooner rather than later.</p>"], ["url", "http://loxstockandbarrel.com.au"]]
+D, [2014-06-21T20:09:30.998301 #10404] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2014-06-21T20:09:48.485957 #10404] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-21T20:09:48.487068 #10404] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("area", "category", "image", "name", "phone", "rating", "review", "url") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["area", "East"], ["category", "Cafe"], ["image", "http://www.broadsheet.com.au/media/cache/df/97/df97b82da0c1497b4f7b76110fccbffa.jpg"], ["name", "Lox Stock and Barrel"], ["phone", "(02) 9300 0368"], ["rating", "3"], ["review", "  <p>The brother and sister team, Neil and Lianne Gottheiner, who brought us Brown Sugar on Curlewis Street, have expanded their operation into a freshly whitewashed space around the corner – Lox Stock & Barrel – where they’re busily preaching the pleasures of New York-style deli fare. With head chef Kurt Mengetti, previously of Baroque, working hard in the kitchen, it’s something of a European dream team.</p>\r\n<p>\r\nFour varieties of chewy, pleasantly dense bagels are boiled onsite every day. They’re not too sweet and if it’s a truly Jewish-style meal you’re hankering for, try the cafe’s chopped liver, egg and onion on a sweet onion bagel with a side of pickles, or the house-made brisket pastrami on rye, brought in from Bondi’s Organic Bakery, just down the road.</p>\r\n<p>\r\nIf it's something lighter you're after, salads are textural, fresh and herby. Sustainable fish is used with tasty, cured sardines on grilled toast, or slices of albacore tuna in a panini with jalapenos and miso-dressed slaw. Match it with a Bloody Mary mixed with pickled jalapenos and house-made tomato juice.\r\n</p>\r\n<p>\r\nGypsy coffee is extracted by hand through a truly old-school, lever-powered manual piston coffee machine. Pop in for breakfast or lunch (and soon for dinner), but if the current trade is anything to go by, it's time to head beachside sooner rather than later.</p>"], ["url", "http://loxstockandbarrel.com.au"]]
+D, [2014-06-21T20:09:48.490888 #10404] DEBUG -- :   [1m[35m (0.7ms)[0m  commit transaction
+D, [2014-06-21T20:09:48.496720 #10404] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-21T20:09:48.497680 #10404] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("area", "category", "image", "name", "phone", "rating", "review", "url") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["area", "East"], ["category", "Cafe"], ["image", "http://www.broadsheet.com.au/media/cache/df/97/df97b82da0c1497b4f7b76110fccbffa.jpg"], ["name", "Lox Stock and Barrel"], ["phone", "(02) 9300 0368"], ["rating", "3"], ["review", "  <p>The brother and sister team, Neil and Lianne Gottheiner, who brought us Brown Sugar on Curlewis Street, have expanded their operation into a freshly whitewashed space around the corner – Lox Stock & Barrel – where they’re busily preaching the pleasures of New York-style deli fare. With head chef Kurt Mengetti, previously of Baroque, working hard in the kitchen, it’s something of a European dream team.</p>\r\n<p>\r\nFour varieties of chewy, pleasantly dense bagels are boiled onsite every day. They’re not too sweet and if it’s a truly Jewish-style meal you’re hankering for, try the cafe’s chopped liver, egg and onion on a sweet onion bagel with a side of pickles, or the house-made brisket pastrami on rye, brought in from Bondi’s Organic Bakery, just down the road.</p>\r\n<p>\r\nIf it's something lighter you're after, salads are textural, fresh and herby. Sustainable fish is used with tasty, cured sardines on grilled toast, or slices of albacore tuna in a panini with jalapenos and miso-dressed slaw. Match it with a Bloody Mary mixed with pickled jalapenos and house-made tomato juice.\r\n</p>\r\n<p>\r\nGypsy coffee is extracted by hand through a truly old-school, lever-powered manual piston coffee machine. Pop in for breakfast or lunch (and soon for dinner), but if the current trade is anything to go by, it's time to head beachside sooner rather than later.</p>"], ["url", "http://loxstockandbarrel.com.au"]]
+D, [2014-06-21T20:09:48.499547 #10404] DEBUG -- :   [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+D, [2014-06-21T20:09:52.825714 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:09:56.501693 #10404] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T20:09:56.503967 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:10:01.432769 #10404] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 8]]
+D, [2014-06-21T20:10:01.442295 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T20:10:01.443848 #10404] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T20:10:03.773088 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 8]]
+D, [2014-06-21T20:10:03.773330 #10404] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-06-21T20:10:03.786328 #10404] DEBUG -- :   [1m[35mSQL (1.0ms)[0m  DELETE FROM "places" WHERE "places"."id" = ?  [["id", 8]]
+D, [2014-06-21T20:10:03.787202 #10404] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+D, [2014-06-21T20:10:03.818376 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T20:10:03.819776 #10404] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T20:10:06.426709 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 7]]
+D, [2014-06-21T20:10:06.428736 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T20:10:06.430626 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:10:08.541342 #10404] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 7]]
+D, [2014-06-21T20:10:08.541577 #10404] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-06-21T20:10:08.542278 #10404] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "places" WHERE "places"."id" = ?[0m  [["id", 7]]
+D, [2014-06-21T20:10:08.551325 #10404] DEBUG -- :   [1m[35m (8.9ms)[0m  commit transaction
+D, [2014-06-21T20:10:08.560220 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T20:10:08.561794 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:10:15.341073 #10404] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-21T20:10:15.342613 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T20:10:15.344763 #10404] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T20:14:45.052714 #10404] DEBUG -- :   [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-06-21T20:14:45.054819 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T20:14:45.058403 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:14:52.559279 #10404] DEBUG -- :   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+D, [2014-06-21T20:14:52.561347 #10404] DEBUG -- :   [1m[35mPlace Load (0.1ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:15:11.411412 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."category" = 'Bar'[0m
+D, [2014-06-21T20:15:11.413759 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:15:21.820857 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."category" = 'Cafe'[0m
+D, [2014-06-21T20:15:21.823152 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:15:51.001378 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"  WHERE "places"."rating" = '4'[0m
+D, [2014-06-21T20:15:51.003683 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places"."category" FROM "places"
+D, [2014-06-21T20:16:18.008634 #10404] DEBUG -- :   [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places"  WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2014-06-21T20:16:18.011406 #10404] DEBUG -- :   [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T20:16:18.013673 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m
+D, [2014-06-21T20:16:29.944176 #10404] DEBUG -- :   [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+D, [2014-06-21T20:16:29.946962 #10404] DEBUG -- :   [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places"."category" FROM "places"[0m

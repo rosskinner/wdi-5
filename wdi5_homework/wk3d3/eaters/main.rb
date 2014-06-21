@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'pry'
-require 'pry-debugger'
 require 'sqlite3'
 
 require_relative 'place'
