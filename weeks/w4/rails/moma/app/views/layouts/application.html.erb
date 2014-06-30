@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moma</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="strip"></div>
+<div id="container">
+<nav>
+<h1> <%= link_to("Moma Repo", works_path) %></h1>
+  <ul>
+    <li><%= link_to("Home", '/') %> </li>
+    <li><%= link_to("Works", works_path) %> </li>
+    <li><%= link_to("New Work", new_work_path) %> </li>
+     <li><%= link_to("Artists", artists_path) %> </li>
+    <li><%= link_to("New Artists", new_artist_path) %> </li>
+  </ul>
+</nav>
+<%= yield %>
+<footer>
+  &copy Rosalind Skinner
+</footer>
+</div>
+
+</body>
+</html>

@@ -181,7 +181,8 @@ select {
   background:rgba(255,255,255,0);
 }
 
-@media (max-width:400px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
   .bottom {
     position:inherit;
     margin-left:300px;
@@ -191,19 +192,19 @@ select {
     width:100%;
   }
 
-.s {
-  display:block;
-}
+  .s {
+    display:block;
+  }
 
-.s p {
-  margin-left:40px;
-  margin-top:0;
-}
-.connect {
-  -webkit-transform: rotate(0.25turn);
-  position:absolute;
-  left:-33px;
-  top:32px;
-  width:75px;
-}
+  .s p {
+    margin-left:40px;
+    margin-top:0;
+  }
+  .connect {
+    -webkit-transform: rotate(0.25turn);
+    position:absolute;
+    left:-33px;
+    top:32px;
+    width:75px;
+  }
 }

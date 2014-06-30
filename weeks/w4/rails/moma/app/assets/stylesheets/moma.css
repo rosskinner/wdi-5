@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);
+
+body {
+  margin:0;
+
+}
+#strip {
+  border-top:6px solid #CBFF48;
+  position:fixed;
+  width:100%;
+  height:1px;
+}
+#container {
+  max-width: 940px;
+  font-weight:100;
+  margin:auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content {
+ text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+
+.thumb {
+  height: 12em;
+}
+
+.medium {
+  width:100%
+}
+nav {
+  font-weight:100;
+}
+
+nav h1{
+  font-size:3em;
+  display:inline-block;
+
+}
+
+nav ul {
+  list-style: none;
+  padding:1em 0;
+  margin:0;
+  display:inline-block;
+  text-align:right;
+  width:750px;
+
+}
+
+nav li {
+  display: inline-block;
+  padding:1em;
+  font-size:1em;
+}
+
+a {
+  text-decoration:none;
+  font-family:inherit;
+  color:#000;
+}
+
+a:hover {
+  color:#ccc;
+}
+
+li {
+  list-style:none;
+}
+label {
+  min-width:80px;
+  display:inline-block;
+  text-align:right;
+}
+
+.grid {
+  display:inline-block;
+  text-align:left;
+  vertical-align:top;
+  margin:0 10px;
+  max-width:200px;
+}
+
+.grid p {
+  text-align: right;
+  font-size:0.7em;
+}
+
+.grid li {
+  font-size:0.8em;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+
+.works {
+  display:inline-block;
+  text-align:justify;
+  max-width:300px;
+  vertical-align:top;
+}
+
+.artist_works {
+  text-align:justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  border-top: 1px solid #ccc;
+
+}
+
+h1, h2 {
+  font-family: 'Grand Hotel', cursive;;
+}
+
+footer {
+  border-top:1px solid #ccc;
+  font-family:inherit;
+  text-align:right;
+}
+input {
+  background: #FFF;
+  border:1px solid #ccc;
+  padding:10px;
+}
+input[type=submit] {
+  background-color:#FFF;
+  border: 1px solid #ccc;
+  padding:10px;
+  cursor:pointer;
+  margin-left:85px;
+}
+
+select {
+  background-color:#FFF;
+  border:1px solid #ccc;
+  border-radius:0px;
+
+}

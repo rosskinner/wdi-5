@@ -1,0 +1,13 @@
+<div class="content">
+
+<% @artists.each do |artist| %>
+<section class="grid">
+  <p><%= image_tag(artist.image, :class => 'thumb') %> </p>
+  <p> <%= link_to(artist.name, artist) %> </p>
+  <p><%= link_to('Edit', edit_artist_path(artist)) %> |
+  <%= link_to('Delete', artist, :data =>{:confirm=>'Are you sure you want to do delete this artist?',:method => :delete }) %></p>
+</ul>
+</section>
+<% end %>
+<span class="stretch"></span>
+</div>

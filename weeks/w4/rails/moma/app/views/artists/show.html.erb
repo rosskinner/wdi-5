@@ -1,0 +1,17 @@
+<h2> <%= @artist.name%> </h2>
+<section class="artist">
+  <p> <%= image_tag(@artist.image, :class => 'medium') %> </p>
+  <p> <%= @artist.nationality  %>, <%= @artist.dob.strftime('%b %d %Y') %>, <%= @artist.period %> </p>
+
+</section>
+<section class="artist_works">
+<h2>Works</h2>
+<% @artist.works.each do |work| %>
+  <div class="works">
+    <%= image_tag(work.image, :class => 'thumb') %>
+    <p><%= link_to(work.title, work) %></p>
+  </div>
+
+  <% end %>
+  <span class="stretch"></span>
+  </section>
