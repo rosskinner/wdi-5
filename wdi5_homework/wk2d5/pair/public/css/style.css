@@ -4,6 +4,7 @@ body {
   font-family: 'Amatic SC', Arial, sans-serif;
   font-weight:300;
   color: #57575C;
+  position:relative;
 }
 
 .container {
@@ -18,7 +19,6 @@ body {
 }
 
 header{
-  background:#FFF;
   border-bottom:1px solid #ccc;
 }
 
