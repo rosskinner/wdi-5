@@ -36,19 +36,19 @@ if (startLine === endLine) {
     }
   }
   if (end < endUnionSq) {
-    for(i = end; i <= (endUnionSq + 1); i++){
+    for (i = end; i <= (endUnionSq + 1); i++) {
       var tripStops = stations[endLine][i];
       trip.push(tripStops);
     }
   }
   if (start > startUnionSq) {
-    for(i = startUnionSq; i <= start; i++){
+    for (i = startUnionSq; i <= start; i++) {
       var tripStops = stations[startLine][i];
       trip.push(tripStops);
     }
   }
   if (end > endUnionSq) {
-    for(i = (endUnionSq + 1); i <= end; i++){
+    for (i = (endUnionSq + 1); i <= end; i++) {
       var tripStops = stations[endLine][i];
       trip.push(tripStops);
     }
@@ -58,6 +58,5 @@ if (startLine === endLine) {
   var trip = trip.join(", ");
 
 alert("Your trip: " + trip + " with " + tripLength + " stops.");
-
 
 

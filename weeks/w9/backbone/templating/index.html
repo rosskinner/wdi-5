@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Templating Demo</title>
+  <link rel="stylesheet" href="css/glitter.css">
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/demo.js"></script>
+</head>
+<body>
+  <div id="yes">
+  </div>
+
+<!-- Type needs to be anything other than text/javascript so it knows what to do with it. Javascript doesn't know how to deal with html elements -->
+  <script id="post-template" type="text/underscore-template">
+    <article>
+      <h2><%= title %> </h2>
+      <h3 class="fancy">By: <%= author %> </h3>
+      <div> <%= content %></div>
+    </article>
+  </script>
+
+</body>
+</html>

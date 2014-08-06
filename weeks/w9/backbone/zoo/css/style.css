@@ -1,0 +1,51 @@
+body {
+  margin: auto;
+  font-family:'helvetica-neue', sans-serif;
+  font-weight:100;
+  border-top:5px solid blue;
+}
+
+.container {
+  max-width:960px;
+  margin: 0 auto;
+}
+
+nav {
+  display: inline-block;
+  text-align:right;
+  width:450px;
+}
+
+header {
+  width:500px;
+  margin:0 auto;
+  display:inline-block;
+}
+
+#posts li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#posts li:hover {
+  color:grey;
+}
+
+#post-image {
+  width:600px;
+  margin:0 auto;
+}
+
+#main {
+  width:100%;
+}
+
+
+h1, h2 {
+  font-weight: 100;
+}
+
+h1 {
+  color:blue;
+}

@@ -1,0 +1,72 @@
+.notification {
+  border: 1px solid #ccc;
+  font-size: 10px;
+  padding: 1em;
+}
+
+.error {
+  @extend .notification;
+  color: red;
+}
+
+.success {
+  @extend .notification;
+  color: #00cc00;
+}
+
+$brand-color: blue;
+$margin-centered: 0 auto;
+$margin-size: 30px;
+$font-weight: 100;
+
+@mixin content {
+  font-size: 12px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  border: 1px solid #cbff48;
+}
+
+@mixin indent($left) {
+  margin-left: $left;
+  padding-left:0;
+}
+
+h1 {
+  color: $brand-color;
+  width:50%;
+  margin: $margin-centered;
+  font-weight: $font-weight;
+}
+
+.post {
+  padding: 0px 30px;
+  border-top: 1px dashed #ccc;
+
+  .slug {
+    font-size: 10px;
+    font-style: italic;
+    text-align:center;
+   }
+
+  h2, h3, h4 {
+    font-weight: $font-weight;
+  }
+
+  .date {
+    color: $brand-color;
+    @include indent(40px);
+  }
+
+  .content {
+    @include content;
+
+    p {
+      margin-top: $margin-size * 2/3;
+    }
+
+    p:hover {
+      background-color: #EEE;
+    }
+
+  }
+}

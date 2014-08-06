@@ -1,0 +1,44 @@
+# #creating a new directory which will run when calling rake
+# directory "tmp"
+
+# file "tmp/hello.tmp" => "tmp" do
+#   sh "echo Hello >> tmp/hello.tmp"
+# end
+
+task :default => 'morning:turn_off_alarm'
+namespace :morning do
+  desc "Turns off the goddamm alarm."
+  task :turn_off_alarm do
+    puts "Turned off the alarm"
+  end
+
+  desc "Make myself purdy"
+  task :groom_myself do
+    puts "Brushed teeth."
+    puts "Showered."
+    puts "Styled beard."
+  end
+
+  desc "Correct deficiencies in my bloodstream"
+  task :make_coffee do
+    cups = ENV["COFFEE_CUPS"] || 2
+    puts "Made #{cups} cups of coffee."
+  end
+
+  desc "chillin with the villain"
+  task :walk_dog do
+    puts "best dog ever, walked."
+  end
+
+  desc "Top of the morning to ya!"
+  task :get_ready => [:turn_off_alarm, :groom_myslrf, :make_coffee, :walk_dog] do
+    puts "face the day"
+  end
+
+  namespace :afternoon do
+    task :make_coffee do
+      Rake::Task['morning:make_coffee'].invoke
+      puts "ready for the afternoons"
+    end
+  end
+end
