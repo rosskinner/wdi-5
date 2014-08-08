@@ -1,0 +1,70 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Ros/Projects/wdi-5/weeks/w10/advanced/fruitstore/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Ros/Projects/wdi-5/weeks/w10/advanced/fruitstore/app/helpers/fruits_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Ros/Projects/wdi-5/weeks/w10/advanced/fruitstore/app/controllers/fruits_controller.rb": [
+        1,
+        1,
+        7,
+        7,
+        7,
+        11,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        4,
+        4,
+        2,
+        null,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/Ros/Projects/wdi-5/weeks/w10/advanced/fruitstore/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Ros/Projects/wdi-5/weeks/w10/advanced/fruitstore/app/models/fruit.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1407379897
+  }
+}
